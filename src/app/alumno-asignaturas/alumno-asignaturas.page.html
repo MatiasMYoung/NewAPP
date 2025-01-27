@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Asignaturas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item *ngFor="let asignatura of asignaturas">
+      <ion-label>
+        <h2>{{ asignatura.nombre }}</h2>
+        <p>Código: {{ asignatura.codigo }}</p>
+        <p>Sección: {{ asignatura.seccion }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

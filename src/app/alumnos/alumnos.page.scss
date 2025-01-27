@@ -1,0 +1,15 @@
+/* filepath: /c:/Users/matia/Documents/NuevaApp/NewApp/src/app/alumnos/alumnos.page.scss */
+.qr-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.qr-image {
+  width: 150px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto;
+  margin-bottom: 20px; /* Espacio entre la imagen y la frase */
+}

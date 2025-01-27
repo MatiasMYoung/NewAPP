@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cronos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="login-card-container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Login</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-input type="text" [(ngModel)]="loginData.user" placeholder="Usuario"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="password" [(ngModel)]="loginData.password" placeholder="Contraseña"></ion-input>
+        </ion-item>
+        <ion-button expand="full" (click)="iniciarSesion()">Iniciar Sesión</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

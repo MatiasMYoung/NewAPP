@@ -1,0 +1,13 @@
+<footer style="text-align: center; font-size: 0.8em; padding: 10px; background-color: #2F1829; color: #FFFFFF;">
+  <p id="datetime"></p>
+</footer>
+
+<script>
+  function updateDateTime() {
+    const now = new Date();
+    const datetimeString = now.toLocaleString();
+    document.getElementById('datetime').innerText = datetimeString;
+  }
+  setInterval(updateDateTime, 1000);
+  updateDateTime();
+</script>

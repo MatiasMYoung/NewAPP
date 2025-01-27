@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Bienvenido, {{ alumno.nombre }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="qr-section">
+    <img src="../../assets/icon/Commons_QR_code.png" alt="QR Code" class="qr-image">
+    <h2>Escanear Código QR</h2>
+    <ion-button expand="full" (click)="confirmarAsistencia()">Escanee código QR</ion-button>
+    <ion-button expand="full" color="danger" (click)="mostrarError()">Error de Lectura</ion-button>
+  </div>
+</ion-content>
+
+<app-footer></app-footer>

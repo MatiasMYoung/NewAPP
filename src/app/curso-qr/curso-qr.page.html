@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>QR del Curso</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h2>Nombre: {{ curso.nombre }}</h2>
+  <h3>ID: {{ curso.id }}</h3>
+  <h3>Código: {{ curso.codigo }}</h3>
+  <h3>Sección: {{ curso.seccion }}</h3>
+  <div class="qr-container">
+    <img src="../../assets/icon/Commons_QR_code.png" alt="QR Code">
+  </div>
+  <ion-button expand="full" (click)="verDetallesCurso()">Detalles del Curso</ion-button>
+</ion-content>
+

@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Confirmación de Asistencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div *ngIf="alumno">
+    <h2>Alumno: {{ alumno.nombre }}</h2>
+    <p>ID: {{ alumno.id }}</p>
+  </div>
+
+  <div *ngIf="asistenciaConfirmada" style="text-align: center; margin: 20px 0;">
+    <ion-icon name="checkmark-circle" style="color: green; font-size: 2em;"></ion-icon>
+    <p>Asistencia confirmada</p>
+  </div>
+
+  <ion-button expand="full" (click)="verAsignaturas()">Ver Asignaturas</ion-button>
+
+  <ion-list *ngIf="mostrarAsignaturas">
+    <ion-item *ngFor="let asignatura of asignaturas">
+      <ion-label>
+        <h2>{{ asignatura.nombre }}</h2>
+        <p>Código: {{ asignatura.codigo }}</p>
+        <p>Sección: {{ asignatura.seccion }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
